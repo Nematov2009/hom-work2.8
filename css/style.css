@@ -99,27 +99,38 @@
   margin: 0;
 }
 .face {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-color: #e74c3c;
-  border-radius: 50% 50% 40% 40%;
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
   position: relative;
   overflow: hidden;
   display: flex;
 }
-.eyes {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 40px;
-}
+
 .eye {
   width: 100px;
   height: 100px;
   background-color: #ecf0f1;
   border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+.eye1 {
+  width: 100px;
+  height: 100px;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: 60%;
 }
 .mouth {
-  width: 60px;
+  width: 80px;
   height: 10px;
   background-color: #ecf0f1;
   border-radius: 10px;
@@ -129,10 +140,20 @@
   transform: translateX(-50%);
 }
 .hair {
-  width: 200px;
-  height: 80px;
-  background-color: #ecf0f1;
-  border-radius: 50% 50% 0 0;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
   position: absolute;
-  top: -40px;
+  bottom: 80%;
+  left: 50%;
+}
+.hair2 {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  /* padding-bottom: 90px; */
+  margin-left: 12%;
+  margin-top: -17%;
 }
